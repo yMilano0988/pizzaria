@@ -1,0 +1,99 @@
+
+<html lang="en">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="view" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estilo.css">
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+ 
+   <script>
+    alert("Utilize esse formulario para se comunicar conosco");
+    dia = new Array ("Domingo","Segunda-Feira","Terça-Feira","Quarta-Feira","Quinta-Feira","Sexta-Feira","Sabado")
+    mes = new Array ("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro")
+    data = new Date
+   </script>
+   
+<body>
+
+    <header>
+        <div class="logo_caixa">
+            <h1>
+                <img src="logo.png" class="logo"></img>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="cardapio.html">cardápio</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+<main>
+
+    <ul class = "contato-titulo">
+        <li class = "contato-item">CONTATO</li>
+    </ul>
+    
+     <!--javascript-->
+    <p style ="text-align: right;margin-right: 10px;"> 
+       <script type="text/javascript">
+        alert(dia[data.getDay()]);
+       document.write (dia[data.getDay()] + ", " + data.getDate() + " de " +
+       mes[data.getMonth()]+ " de " + data.getFullYear())
+       </script>
+
+    </p>
+     <p class = "contato_texto">
+        Prencha os campos abaixo com a sua duvida, reclamação ou elogio e nossa equipe responderá o mais breve possivel.
+     </p>
+    <p class = "contato_texto">
+        Nosso horario de funcionamento: Terça à Domingo das 18h às 23h |
+    <a class="whatsapp-link" href="https://wa.me/5511942826827" target="_blank"><i class="fa fa-whatsapp"></i></a> (11) 4333-9999
+        
+<form name="frmContato" method="get" action="mailto:teste@mail.com" target="_blank">
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label for="nomesobrenome">* Nome e sobrenome</label>
+        <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+        <label for="email">* E-mail</label>
+        <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX) XXXXX-XXXX">
+
+        <label for="mensagem">* Mensagem</label>
+        <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
+
+        <label for="contato">Como prefere o nosso contato?
+            <input type="radio" value="radio-mail" name="Contato"> E-mail
+            <input type="radio" value="radio-telefone" name="Contato"> Telefone
+            <input type="radio" value="radio-whatsapp" name="Contato"> Whatsapp
+        </label>
+
+        <br>
+        <label for="horario">Qual o motivo do seu contato?
+            <select>
+                <option>Selecione</option>
+                <option>Dúvida</option>
+                <option>Sugestão</option>
+                <option>Elogio</option>
+                <option>Reclamação</option>
+            </select>
+        </label>
+        <br>
+    </fieldset>
+
+    <label><input type="checkbox" class="chk" > Gostaria de receber nossas novidades por e-mail?</label>
+
+    <input type="submit" value="Enviar formulário" class="enviar">
+</form>
+</main>
+</body>
+</html>

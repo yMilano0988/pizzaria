@@ -1,0 +1,337 @@
+
+p{
+    color: rgb(248, 247, 247);
+}
+
+.logo{
+    width: 50%;
+}
+
+body{
+       margin: 0;
+       padding: 0;
+       border: 0;
+       line-height: 1;
+       font-family:'tahoma',"Arial" ;
+       color: #000000;
+       background: linear-gradient(#d3560e,#000000);
+       
+
+}
+
+/* Estilização da sessão HEADER da pagina*/
+header{
+    background: #d3560e;
+    padding: 20px 0;
+    
+}
+/* Estilização da sessão NAV (navegação) da página*/
+nav{
+    position: absolute;
+    top: 110px;
+    right: -50%;
+
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+
+}
+nav a:hover{
+    color: #faf3f3;
+    text-decoration: underline;
+
+}
+
+/*Estilização das listas da pagina*/
+ul{
+    list-style : none;
+
+
+}
+/*Estilizaçao do lagotipo*/
+.logo_caixa{
+    width:940px;
+    position:relative;
+    margin:auto;
+    right: 10%;
+
+}
+.logo{
+    width: 50%;
+}
+
+
+/*Banner*/
+.banner{
+    width: 100%;
+}
+
+/*Estilização da área "Sobre"*/
+.titulo-principal{
+    text-align: center;
+    font-size: 2em; /* dobro da fonte padrão*/
+    margin: 0 auto;
+    clear: left;
+    color: #ffffff;
+}
+.principal {
+    width: 100%;
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align:justify;
+}
+
+.principal strong{
+    font-weight: bold;
+}
+
+.principal em {
+    font-style:italic;
+}
+
+.pizza {
+    width: 100px;
+    float: left;
+    margin: -18px 20px 20px 500px;
+
+}
+
+/*Estilização do Mapa */
+.map{
+    padding: 3em 0;
+    
+}
+.mapa-conteudo{
+width: 940px;
+margin: 0 650px;
+}
+
+.map p{
+    margin: 2em 0 2em;
+    text-align: center;
+}
+
+.beneficios{
+    padding: 3em 0;
+    background:#d3560e
+
+}
+.conteudo-beneficio{
+    width: 640px;
+    margin :0 auto;
+    color: #faf3f3;
+
+}
+.lista-beneficio{
+    width:50%;
+    display:inline-block;
+    vertical-align:top;
+    color: #faf3f3;
+    
+}
+.img_beneficios{
+    width:50%;
+    opacity: 1;
+    transition: 400ms;
+    box-shadow:10px 10px 5px 0px #ffffff;
+
+}
+
+.img_beneficios:hover{
+   opacity:0.7;
+}
+.itens{
+    line-height: 1.5;
+} 
+.itens:before{
+      content: "★";
+}
+.itens:first-child{
+    font-weight:bold;
+}
+.video{
+    width:560px;
+     margin: 2em auto;
+}
+nav a:hover{
+    color:#FF0000;
+    text-decoration: underline;
+
+
+}
+footer{
+    text-align: center;
+    background:#351402 ;
+
+}
+.logo-footer{
+    width: 20%;
+    padding: 30px;
+}
+/*Banner*/
+.banner{
+    width:100%
+}
+/*Copyright*/
+.copyright{
+    color:#000000;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+/*Menu cardapio*/
+.cardapio-titulo{
+
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    margin-top: 10px;
+}
+
+.cardapio-item:before{
+       content: "🍕";
+}
+
+.cardapio{
+    width: 90%;
+    margin: 20px 0 50px 0;
+}
+
+.cardapio_texto{
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+    font-style: initial;
+}
+
+.cardapio li {
+    display:inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+
+    margin: 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 4px solid #fbc418;
+    border-radius: 10px;
+
+}
+
+.cardapio li:hover{
+    border-color: #C78C19;
+    cursor: pointer;
+}
+
+.cardapio li:active{
+    border-color: #088C19;
+
+}
+
+.cardapio li:hover h2{
+    font-size:60px;
+    color:darkred;
+    cursor: pointer;
+
+}
+
+.cardapio h2{
+    font-size: 50px;
+    font-weight:bold;
+    color: white;
+}
+
+.img_cadapio{
+    text-align:center;
+    padding: 0 0 2% 0;
+
+}
+.img_cadapio{
+    width:200px;
+
+}
+.img_cardapio{
+    width: 200px;
+}
+.item_descricao{
+    font-size:18px;
+}
+
+/*Formulario de Contato */
+.contato_texto{
+    text-align:center;
+    padding: 0 0 2% 0;
+    
+}
+
+.contato-titulo{
+    font-size:30px;
+    font-weight: bold;
+    color: white;
+    margin-left: 350px;
+
+}
+
+.contato-item:before{
+   content:"🍕";
+}
+
+form{
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+form label,form legend{
+    display:block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+
+fieldset{
+    width: 75%;
+    padding-left: 5%;
+    margin-bottom:2%;
+
+}
+
+.input-padrao{
+    display:black;
+    margin: 0 0 20px;
+    padding:10px 25px;
+    width:85%;
+
+}
+
+.chk{
+    margin:20px 0;
+
+}
+
+.enviar{
+    width:40%;
+    padding:15px 0;
+    background:rgb(219, 121, 0);
+    color:white;
+    font-weight: bold;
+    border-radius:5px;
+    transition:1s all;
+    cursor:pointer;
+
+}
+
+.enviar:hover{
+    background:rgb(219, 121, 0);
+    transform:scale(1,1.1);
+}
